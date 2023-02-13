@@ -4,7 +4,7 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class PeopleResponse(
+data class PersonResponse(
     @SerialName("name") val name: String,
     @SerialName("height") val height: String,
     @SerialName("mass") val mass: String,
