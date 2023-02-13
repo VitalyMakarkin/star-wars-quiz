@@ -1,5 +1,6 @@
 package com.example.starwarsquiz.core.database.model
 
+import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
@@ -8,12 +9,12 @@ import androidx.room.PrimaryKey
 )
 data class PersonEntity(
     @PrimaryKey(autoGenerate = true) val id: Int,
-    val name: String,
-    val height: Int,
-    val mass: Int,
-    val hairColor: String,
-    val skinColor: String,
-    val eyeColor: String,
-    val birthYear: String,
-    val gender: String
+    @ColumnInfo("name") val name: String,
+    @ColumnInfo("height") val height: Int,
+    @ColumnInfo("mass") val mass: Int,
+    @ColumnInfo("hair_Color") val hairColor: String,
+    @ColumnInfo("skin_color") val skinColor: String,
+    @ColumnInfo("eye_color") val eyeColor: String,
+    @ColumnInfo("birth_year") val birthYear: String,
+    @ColumnInfo("gender") val gender: String
 )
