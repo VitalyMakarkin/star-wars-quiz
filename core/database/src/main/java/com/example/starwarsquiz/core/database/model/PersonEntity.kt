@@ -3,6 +3,7 @@ package com.example.starwarsquiz.core.database.model
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import com.example.starwarsquiz.core.model.data.Person
 
 @Entity(
     tableName = "people"
@@ -17,4 +18,16 @@ data class PersonEntity(
     @ColumnInfo("eye_color") val eyeColor: String,
     @ColumnInfo("birth_year") val birthYear: String,
     @ColumnInfo("gender") val gender: String
+)
+
+fun PersonEntity.toPerson() = Person(
+    id = this.id,
+    name = this.name,
+    height = this.height,
+    mass = this.mass,
+    hairColor = this.hairColor,
+    skinColor = this.skinColor,
+    eyeColor = this.eyeColor,
+    birthYear = this.birthYear,
+    gender = this.gender
 )

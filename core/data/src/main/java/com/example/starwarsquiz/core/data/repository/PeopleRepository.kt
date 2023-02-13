@@ -5,5 +5,5 @@ import kotlinx.coroutines.flow.Flow
 
 interface PeopleRepository {
 
-    fun getPeople() : Flow<List<Person>>
+    suspend fun getPeople() : Flow<List<Person>>
 }
