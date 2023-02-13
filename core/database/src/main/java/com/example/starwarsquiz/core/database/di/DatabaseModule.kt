@@ -16,7 +16,7 @@ class DatabaseModule {
 
     @Provides
     @Singleton
-    fun providesAppDatabase(
+    fun provideAppDatabase(
         @ApplicationContext context: Context
     ): AppDatabase = Room.databaseBuilder(
         context,

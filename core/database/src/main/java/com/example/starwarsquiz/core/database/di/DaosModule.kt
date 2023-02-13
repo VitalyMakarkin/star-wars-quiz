@@ -13,12 +13,12 @@ import dagger.hilt.components.SingletonComponent
 class DaosModule {
 
     @Provides
-    fun providesPersonDao(
+    fun providePersonDao(
         database: AppDatabase
     ): PersonDao = database.personDao()
 
     @Provides
-    fun providesPlanetDao(
+    fun providePlanetDao(
         database: AppDatabase
     ): PlanetDao = database.planetDao()
 }
