@@ -1,4 +1,4 @@
-package com.example.starwarsquiz.core.network.retrofit
+package com.example.starwarsquiz.core.network.api
 
 import com.example.starwarsquiz.core.network.model.PageResponse
 import com.example.starwarsquiz.core.network.model.PersonResponse
