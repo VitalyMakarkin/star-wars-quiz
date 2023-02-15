@@ -1,4 +1,4 @@
-package com.example.starwarsquiz.feature.question
+package com.example.starwarsquiz.feature.question.domain
 
 import com.example.starwarsquiz.core.data.repository.PeopleRepository
 import com.example.starwarsquiz.core.model.data.Person

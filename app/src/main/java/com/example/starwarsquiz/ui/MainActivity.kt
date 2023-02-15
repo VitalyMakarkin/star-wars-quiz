@@ -1,4 +1,4 @@
-package com.example.starwarsquiz
+package com.example.starwarsquiz.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

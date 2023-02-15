@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/question_fragment"
-        android:name="com.example.starwarsquiz.feature.question.QuestionFragment"
+        android:name="com.example.starwarsquiz.feature.question.ui.QuestionFragment"
         android:label="question_fragment"
         tools:layout="@layout/fragment_question" />
 

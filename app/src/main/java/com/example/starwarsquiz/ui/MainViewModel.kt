@@ -1,4 +1,4 @@
-package com.example.starwarsquiz
+package com.example.starwarsquiz.ui
 
 import androidx.lifecycle.ViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel

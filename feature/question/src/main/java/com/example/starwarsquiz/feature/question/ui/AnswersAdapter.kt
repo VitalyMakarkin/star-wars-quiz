@@ -1,4 +1,4 @@
-package com.example.starwarsquiz.feature.question
+package com.example.starwarsquiz.feature.question.ui
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -16,18 +16,11 @@ class AnswersAdapter : ListAdapter<Person, RecyclerView.ViewHolder>(AnswersDiffU
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-        when (holder) {
-            is AnswerViewHolder -> holder.bind(getItem(position))
-        }
+        (holder as AnswerViewHolder).bind(getItem(position))
     }
 
-//    override fun getItemViewType(position: Int): Int {
-//        return when (getItem(position)) {
-//            is Person -> 0
-//        }
-//    }
+    private object AnswersDiffUtil : DiffUtil.ItemCallback<Person>() {
 
-    object AnswersDiffUtil : DiffUtil.ItemCallback<Person>() {
         override fun areItemsTheSame(oldItem: Person, newItem: Person): Boolean {
             return oldItem.id == newItem.id
         }
@@ -35,10 +28,9 @@ class AnswersAdapter : ListAdapter<Person, RecyclerView.ViewHolder>(AnswersDiffU
         override fun areContentsTheSame(oldItem: Person, newItem: Person): Boolean {
             return oldItem == newItem
         }
-
     }
 
-    class AnswerViewHolder(private val binding: ItemAnswerBinding) :
+    private class AnswerViewHolder(private val binding: ItemAnswerBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
         fun bind(answer: Person) {
