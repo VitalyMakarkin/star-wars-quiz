@@ -5,4 +5,6 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
 @HiltViewModel
-class QuestionViewModel @Inject constructor(): ViewModel()
+class QuestionViewModel @Inject constructor(
+    private val questionInteractor: QuestionInteractor
+): ViewModel()
