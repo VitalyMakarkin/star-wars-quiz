@@ -15,6 +15,8 @@ import com.example.starwarsquiz.core.database.model.PlanetEntity
     version = 1
 )
 abstract class AppDatabase : RoomDatabase(){
+
     abstract fun personDao(): PersonDao
+
     abstract fun planetDao(): PlanetDao
 }

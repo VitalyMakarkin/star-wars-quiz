@@ -30,8 +30,9 @@ class AnswersAdapter : ListAdapter<Person, RecyclerView.ViewHolder>(AnswersDiffU
         }
     }
 
-    private class AnswerViewHolder(private val binding: ItemAnswerBinding) :
-        RecyclerView.ViewHolder(binding.root) {
+    private class AnswerViewHolder(
+        private val binding: ItemAnswerBinding
+    ) : RecyclerView.ViewHolder(binding.root) {
 
         fun bind(answer: Person) {
             binding.answerText.text = answer.name

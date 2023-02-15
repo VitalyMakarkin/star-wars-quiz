@@ -8,6 +8,7 @@ import javax.inject.Inject
 class QuestionInteractor @Inject constructor(
     private val peopleRepository: PeopleRepository
 ) {
+
     suspend fun getPeople(): Flow<List<Person>> {
         return peopleRepository.getPeople()
     }
