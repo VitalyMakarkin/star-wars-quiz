@@ -1,4 +1,4 @@
-package com.example.starwarsquiz.feature.question
+package com.example.starwarsquiz.feature.question.ui
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

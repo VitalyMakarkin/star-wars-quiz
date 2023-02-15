@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
-import com.example.starwarsquiz.feature.question.QuestionViewModel
 import com.example.starwarsquiz.feature.question.databinding.FragmentQuestionBinding
 import dagger.hilt.android.AndroidEntryPoint
 
